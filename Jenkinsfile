@@ -1,5 +1,6 @@
 pipeline {
     agent any
+	environment {         JAVA_HOME = 'C:\Program Files\Java\jdk-11'     }
     stages {
         stage('Clean') {
             steps {
