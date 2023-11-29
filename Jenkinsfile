@@ -3,21 +3,21 @@ pipeline {
     stages {
         stage('Clean') {
             steps {
-                dir("Srinivasulu-chevula-RestfulAndSoapWS2") {
+                dir("Ravikanti-Tharun-RestfulAndSoapWS2") {
 		bat "mvn clean"
 	}
             }
         }
         stage('Compile') {
             steps {
-	dir("Srinivasulu-chevula-RestfulAndSoapWS2") {
+	dir("Ravikanti-Tharun-RestfulAndSoapWS2") {
 		bat "mvn compile"
 	}
             }
         }
         stage('Test') {
             steps {
-	dir("Srinivasulu-chevula-RestfulAndSoapWS2") {
+	dir("Ravikanti-Tharun-RestfulAndSoapWS2") {
 		bat "mvn test"
 	}
             }
